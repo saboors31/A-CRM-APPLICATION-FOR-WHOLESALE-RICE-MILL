@@ -36,9 +36,10 @@ The Rice Mill CRM Application streamlines wholesale rice mill operations using S
 
 
 1. Clone the Repository:
-   
-   [git clone https://github.com/saboors31/A-CRM-APPLICATION-FOR-WHOLESALE-RICE-MILL]([https://github.com](https://github.com/saboors31/A-CRM-APPLICATION-FOR-WHOLESALE-RICE-MILL))
 
+   [Git Clone https://github.com/saboors31/A-CRM-APPLICATION-FOR-WHOLESALE-RICE-MILL](https://github.com/saboors31/A-CRM-APPLICATION-FOR-WHOLESALE-RICE-MILL)
+
+   
 2. Setup Salesforce Environment:
  - Log in to your Salesforce Developer account.
  - Create custom objects, fields, and relationships as per the application's data model.
