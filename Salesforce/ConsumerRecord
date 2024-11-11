@@ -1,0 +1,16 @@
+public class ConsumerRecord { 
+public static void sendEmailNotification(List<consumer__c> consumers) { List<Messaging.SingleEmailMessage> emailsToSend = new List<Messaging.SingleEmailMessage>(); 
+for (consumer__c consumer : consumers) { 
+Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage(); email.setToAddresses(new List<String>{consumer.email__c}); 
+email.setSubject('Welcome to Our Company'); 
+String body = 'Dear ' + consumer.Name + ',\n\n' + 
+'Welcome to MY RICE! You are a valued customer to us. Please continue your journey with us as we strive to provide you with quality resources.\n\n' + 
+'We are proud to associate with customers like you and look forward to collaborating with you by offering exciting discounts and product offers.\n\n' + 
+'So why take a step back? Take a leap of faith and shop with us more as we provide valuable products and offers!\n\n' + 
+'Thank you for your support!\n\n' + 
+'Here are some of the products that other customers have enjoyed:\n\n'; 
+email.setPlainTextBody(body); 
+emailsToSend.add(email); 
+}
+                                                                      }
+}
